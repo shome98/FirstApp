@@ -12,6 +12,7 @@ public class FirstAppApplication {
 
 		ApplicationContext context=SpringApplication.run(FirstAppApplication.class, args);
 		Dev obj=context.getBean(Dev.class);
+		obj.build();
 	}
 
 }
