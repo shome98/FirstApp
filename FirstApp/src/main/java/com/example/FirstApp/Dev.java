@@ -1,5 +1,6 @@
 package com.example.FirstApp;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -9,6 +10,7 @@ public class Dev {
     private Laptop _laptop;
 
     @Autowired
+    @Qualifier(value = "dekstop")
     private Computer comp;
     public Dev(Laptop laptop){
         this._laptop=laptop;
