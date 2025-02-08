@@ -7,6 +7,9 @@ public class Dev {
     @Autowired
     private Laptop laptop;
     private Laptop _laptop;
+
+    @Autowired
+    private Computer comp;
     public Dev(Laptop laptop){
         this._laptop=laptop;
     }
@@ -14,6 +17,7 @@ public class Dev {
 
         laptop.compile();
         _laptop.compile();
+        comp.compile();
         System.out.println("Working on awesome project");
     }
 }
